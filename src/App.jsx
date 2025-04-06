@@ -80,21 +80,22 @@
 // }
 // export default log;
 // ---------------------------------------------------------------------------------
-import Pop from "./attribute class/clg";
-const clg={
-name :"rgpv",
-subject:"cse",
+// import Pop from "./attribute class/clg";
+// const clg={
+// name :"rgpv",
+// subject:"cse",
 
 
-};
-const abc=()=>{ 
+// };
+// const abc=()=>{ 
 
-    return(
-        <>
-        <h1>hello cybrom</h1>
-       <Pop clgname={clg.name} sub={clg.subject}/>
-   {/* (component name, props variable name,app const name,app variable name, )  */}
-        </>
-    )
-}
-export default abc;
+//     return(
+//         <>
+//         <h1>hello cybrom</h1>
+//        <Pop clgname={clg.name} sub={clg.subject}/>
+//    {/* (component name, props variable name,app const name,app variable name, )  */}
+//         </>
+//     )
+// }
+// export default abc;
+// ============================( map )====================================
