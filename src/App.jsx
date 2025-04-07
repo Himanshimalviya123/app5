@@ -19,6 +19,8 @@
 //   <li>oracle</li>
 //   <li>java</li>
 
+// const { useState } = require("react")
+
 // </ul>
 // const subject=()=>{
 //   return(
@@ -99,3 +101,78 @@
 // }
 // export default abc;
 // ============================( map )====================================
+// =====================================================================================================
+// import { useState } from "react";
+// const App=()=>{
+//     const[name,setName]=useState("khusi");
+//     return(
+//         <>
+//         <h1>welcome to my {name}</h1>
+//         <button onClick={()=>{setName("himanshi")}}>submit</button>
+//         </>
+//     )
+// }
+// export default App;
+// =====================================================================
+// import { useState } from "react";
+// const App=()=>{
+//     const[color,setColor]=useState("red");
+//     return(
+//         <>
+//         <h1 style={{ color:color}} > my favuorite color :{color}</h1>
+//         <button onClick={()=>{setColor("green")}}>green color</button>
+//         <button onClick={()=>{setColor("pink")}}>pink color</button>
+//         <button onClick={()=>{setColor("orange")}}>orange color</button>
+//         <button onClick={()=>{setColor("blue")}}>blue color</button>
+
+//         </>
+//     )
+// }
+// export default App;
+// ===================create a counter app===============================
+import { useState } from "react";
+
+const App=()=>{
+    const[cnt,setCnt]=useState(0);
+   const mydec=()=>{
+    if  (setCnt<=0)
+{
+    alert("not less than zero!")
+}
+    else
+    {
+        setCnt(cnt-1);
+    }
+}
+    return(
+        <>
+        <h1 >my counter app{name}</h1>
+        <div style={{border:"2px solid red",padding:"20px",borderRadius:"30px",
+            backgroundColor:"blue",width:"400px",margin:"auto"}}>
+                <h1>my count :{cnt}</h1>
+                <button onClick={()=>{setCnt(cnt+1)}}> increment</button>
+                <button onClick={()=>{mydec}}> decrement</button>
+                <button onClick={()=>{setCnt(0)}}>reset</button>
+             
+        </div>
+        </>
+    )
+}
+export default App;
+// =========================================
+// import { useState,useEffect } from "react";
+// const App=()=>{
+//     const[count,setCount]=useState(0);
+//     useEffect(()=>{
+//         setTimeout(()=>{
+//             setCount(count+1)
+//         },4000)
+//     })
+//     return(
+//         <>
+//         <h1>welcome:{count}</h1>
+//         <button>SUBMIT</button>
+//         </>
+//     )
+// }
+// export default App;
