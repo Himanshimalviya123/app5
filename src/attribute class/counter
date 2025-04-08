@@ -1,0 +1,29 @@
+import { useState } from "react";
+
+const App=()=>{
+    const[cnt,setCnt]=useState(0);
+   const mydec=()=>{
+    if  (cnt<=0)
+{
+    alert("not less than zero!")
+}
+    else
+    {
+        setCnt(cnt-1);
+    }
+}
+    return(
+        <>
+        <h1 >my counter app</h1>
+        <div style={{border:"2px solid red",padding:"20px",borderRadius:"30px",
+            backgroundColor:"lightskyblue",width:"400px",margin:"auto"}}>
+                <h1>my count :{cnt}</h1>
+                <button onClick={()=>{setCnt(cnt+1)}}> increment</button>
+                <button onClick={mydec}> decrement</button>
+                <button onClick={()=>{setCnt(0)}}>reset</button>
+             
+        </div>
+        </>
+    )
+}
+export default App;
