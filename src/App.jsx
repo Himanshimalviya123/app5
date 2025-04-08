@@ -253,33 +253,33 @@
 // }
 // export default App;
 // ==================================spread operter====================
-import { useState} from "react";
-const App=()=>{
-    const[input,setInput]=useState({});  //input={}
-    const handleInput=(e)=>{
-        let name=e.target.name;
-        let value=e.target.value;
-        setInput(values=>({...values,[name]:value}))
-        console.log(input);
+// import { useState} from "react";
+// const App=()=>{
+//     const[input,setInput]=useState({});  //input={}
+//     const handleInput=(e)=>{
+//         let name=e.target.name;
+//         let value=e.target.value;
+//         setInput(values=>({...values,[name]:value}))
+//         console.log(input);
         
-    }
-    return(
-<>
-<h1>application form</h1>
-name:<input type="text" name="name"
-onChange={handleInput}/>
-<br/>
-rollno.:<input type="text" name="rollno."
-onChange={handleInput}/>
-<br/>
-city:<input type="text" name="city"
-onChange={handleInput}/>
-<br/>
-fees:<input type="text" name="fees"
-onChange={handleInput}/>
-<br/>
-<button onClick={handleInput}>save!</button>
-</>
-    )
-}
-export default App;
+//     }
+//     return(
+// <>
+// <h1>application form</h1>
+// name:<input type="text" name="name"
+// onChange={handleInput}/>
+// <br/>
+// rollno.:<input type="text" name="rollno."
+// onChange={handleInput}/>
+// <br/>
+// city:<input type="text" name="city"
+// onChange={handleInput}/>
+// <br/>
+// fees:<input type="text" name="fees"
+// onChange={handleInput}/>
+// <br/>
+// <button onClick={handleInput}>save!</button>
+// </>
+//     )
+// }
+// export default App;
