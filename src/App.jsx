@@ -1,10 +1,6 @@
 // const name="shivani"
 // const age=11
 // const salary=35000
-
-
-
-
 // const App=()=>{
 //   return(
 //     <p>Welcome to react i am {name} my age is {age*2} my salary {salary*3}</p>
