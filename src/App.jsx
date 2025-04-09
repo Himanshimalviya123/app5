@@ -8,19 +8,19 @@
 // }
 // export default App;
 
-// const subject=<ul>
-//          <li>PHp</li>
-//          <li>Oracle</li>
-//          <li>java</li>
-//          <li>sql</li>
-// </ul>
+const subject=<ul>
+         <li>PHp</li>
+         <li>Oracle</li>
+         <li>java</li>
+         <li>sql</li>
+</ul>
 
-// const App=()=>{
-//   return(
-//     <h1>My Subject:{subject}</h1>
-//   )
-// }
-// export default App;
+const App=()=>{
+  return(
+    <h1>My Subject:{subject}</h1>
+  )
+}
+export default App;
 
 //===========================================one top level  element==================================================== 
 // const App=()=>{
