@@ -579,41 +579,62 @@
 
 
 /////////////////////////handle function submit////////////////////////////
-import axios from "react";
-import { useState } from "react";
-const App=()=>{
-    const [input,setInput]=useState({});
-    const handleInput=(e)=>{
-        let name =e.target.name;
-        let value=e.taget.value;
-        setInput(value=>({...value,[name]:value}))
-        console.log(input);
+// import axios from "react";
+// import { useState } from "react";
+// const App=()=>{
+//     const [input,setInput]=useState({});
+//     const handleInput=(e)=>{
+//         let name =e.target.name;
+//         let value=e.target.value;
+//         setInput(values=>({...values,[name]:value}))
+//         console.log(input);
         
-    }
-    const handleSubmit=async()=>{
-      let api=" http://localhost:5174/";
-      const response=await axios.post(api,input);
-      alert("data sussessfully save!!")
+//     }
+//     const handleSubmit=async()=>{
+//       let api="http://localhost:3000/data";
+//       const response=await axios.post(api,input);
+//       console.log(response);
+      
+//       alert("data save sussessfully !!")
 
-    }
-     return(
-    <>
-    <h1>APPLICATION FORM</h1>
-    rollno:<input type="text" name="roll no" onChange={handleInput}/>
-    <br/>
-    name:<input type="text" name="name" onChange={handleInput}/>
-    <br/>
-    fees:<input type="text" name="fees" onChange={handleInput}/>
-    <br/>
-    city:<input type="text" name="city" onChange={handleInput}/>
-    <br/>
-    <button onClick={handleInput}>save!</button>
-    </>
-)
+//     }
+//      return(
+//     <>
+//     <h1>APPLICATION FORM</h1>
+//     rollno:<input type="text" name="roll no" onChange={handleInput}/>
+//     <br/>
+//     name:<input type="text" name="name" onChange={handleInput}/>
+//     <br/>
+//     fees:<input type="text" name="fees" onChange={handleInput}/>
+//     <br/>
+//     city:<input type="text" name="city" onChange={handleInput}/>
+//     <br/>
+//     <button onClick={handleSubmit}>save!</button>
+//     </>
+// )
+// }
+// export default App;
+// **********************************( json )**********************************************************
+
+import {BrowserRouter,Routes,Route} from "react-router-dom";
+import Layout from "./attribute class/layout";
+import Home from "./attribute class/home";
+import Insert from "./attribute class/insert";
+import Display from "./attribute class/display";
+const App=()=>{
+  return(
+      <>
+     <BrowserRouter>
+     <Routes>
+      <Route path="/" element={<Layout/>}>
+      <Route index element={<Home/>}/>
+      <Route path="home" element={<Home/>}/>
+      <Route path="insert" element={<Insert/>}/>
+      <Route path="display"element={<Display/>}/>
+      </Route>
+     </Routes>
+     </BrowserRouter>
+      </>
+  )
 }
 export default App;
-
-
-
-
-

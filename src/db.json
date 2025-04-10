@@ -1,8 +1,9 @@
-{"data":[
+{
+    "data":[
     {
-        "roll no":"1",
+        "roll no":1,
         "name":"himanshi",
         "city":"bhopal",
-        "fees":"45000"
+        "fees":45000
     }
 ]}
