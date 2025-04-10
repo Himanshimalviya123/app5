@@ -1,9 +1,42 @@
+import axios from "axios";
+import { useState,useEffect } from "react";
 const Display=()=>{
+    const[mydata,setMydata]=useState([]);
+    const loadData=async()=>{
+        let api="http://localhost:3000/data";
+        const response=await axios.get(api);
+        console.log(response.data);
+        setMydata(response.data)
+        
+
+    }
+    useEffect(()=>{
+        loadData();
+    },[]);
+    const ans=mydata.map((key)=>{
+        return(
+            <>
+            <tr>
+                <td>{key.empno}</td>
+                <td>{key.name}</td>
+                <td>{key.designation}</td>
+                <td>{key.salary}</td>
+            </tr>
+            </>
+        )
+    })
     return(
         <>
-        <h1>
-            welcome to home page!!
-        </h1>
+       <center><h1>DISPLAY   DATA!! </h1></center>
+        <table style={{border:"2px  solid black",height:"auto",width:"300px" }}>
+            <tr>
+                <th>EMP NO</th>
+                <th>NAME</th>
+                <th>DESIGNATION</th>
+                <th>SALARY</th>
+            </tr>
+            {ans}
+        </table>
         </>
     )
 }

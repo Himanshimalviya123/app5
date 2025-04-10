@@ -1,9 +1,32 @@
 {
-    "data":[
+  "data": [
     {
-        "roll no":1,
-        "name":"himanshi",
-        "city":"bhopal",
-        "fees":45000
+      "id": "d09e",
+      "empno": "1",
+      "name": "ram",
+      "designation": "doctor",
+      "salary": "34000"
+    },
+    {
+      "id": "d43b",
+      "empno": "201",
+      "name": "shivani",
+      "designation": "teacher",
+      "salary": "10000"
+    },
+    {
+      "id": "8929",
+      "empno": "202",
+      "name": "sakshi",
+      "designation": "doctor",
+      "salary": "20000"
+    },
+    {
+      "id": "2866",
+      "empno": "203",
+      "name": "himanshi",
+      "designation": "developer",
+      "salary": "20000"
     }
-]}
+  ]
+}

@@ -9,12 +9,26 @@ const Insert=()=>{
         console.log(input);
         
     }
+    const handleSubmit=async()=>{
+        let api="http://localhost:3000/data";
+        const response=await axios.post(api,input);
+        console.log(response);
+        alert("data save successfully!!!")
+        
+    }
 
     return(
         <>
-        <h1>
-            welcome to home page!!
-        </h1>
+        <h1>INSERT YOUR DATA!!</h1>
+        enter empno :<input type="text" name="empno" onChange={handleInput}/>
+        <br/><br/>
+        enter name :<input type="text" name="name" onChange={handleInput}/>
+        <br/><br/>
+        enter designation :<input type="text" name="designation" onChange={handleInput}/>
+        <br/><br/>
+        enter salary :<input type="text" name="salary" onChange={handleInput}/>
+        <br/><br/>
+        <button onClick={handleSubmit}> save!!!</button>
         </>
     )
 }

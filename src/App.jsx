@@ -615,8 +615,7 @@
 // }
 // export default App;
 // **********************************( json )**********************************************************
-
-import {BrowserRouter,Routes,Route} from "react-router-dom";
+import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Layout from "./attribute class/layout";
 import Home from "./attribute class/home";
 import Insert from "./attribute class/insert";
