@@ -8,19 +8,21 @@
 // }
 // export default App;
 
-const subject=<ul>
-         <li>PHp</li>
-         <li>Oracle</li>
-         <li>java</li>
-         <li>sql</li>
-</ul>
+// import { useState } from "react";
 
-const App=()=>{
-  return(
-    <h1>My Subject:{subject}</h1>
-  )
-}
-export default App;
+// const subject=<ul>
+//          <li>PHp</li>
+//          <li>Oracle</li>
+//          <li>java</li>
+//          <li>sql</li>
+// </ul>
+
+// const App=()=>{
+//   return(
+//     <h1>My Subject:{subject}</h1>
+//   )
+// }
+// export default App;
 
 //===========================================one top level  element==================================================== 
 // const App=()=>{
@@ -573,3 +575,45 @@ export default App;
 //     )
 // }
 // export default App;
+
+
+
+/////////////////////////handle function submit////////////////////////////
+import axios from "react";
+import { useState } from "react";
+const App=()=>{
+    const [input,setInput]=useState({});
+    const handleInput=(e)=>{
+        let name =e.target.name;
+        let value=e.taget.value;
+        setInput(value=>({...value,[name]:value}))
+        console.log(input);
+        
+    }
+    const handleSubmit=async()=>{
+      let api=" http://localhost:5174/";
+      const response=await axios.post(api,input);
+      alert("data sussessfully save!!")
+
+    }
+     return(
+    <>
+    <h1>APPLICATION FORM</h1>
+    rollno:<input type="text" name="roll no" onChange={handleInput}/>
+    <br/>
+    name:<input type="text" name="name" onChange={handleInput}/>
+    <br/>
+    fees:<input type="text" name="fees" onChange={handleInput}/>
+    <br/>
+    city:<input type="text" name="city" onChange={handleInput}/>
+    <br/>
+    <button onClick={handleInput}>save!</button>
+    </>
+)
+}
+export default App;
+
+
+
+
+
