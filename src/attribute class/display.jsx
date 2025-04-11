@@ -28,7 +28,7 @@ const Display=()=>{
     return(
         <>
        <center><h1>DISPLAY   DATA!! </h1></center>
-        <table style={{border:"2px  solid black",height:"auto",width:"300px" }}>
+        <table border="2" >
             <tr>
                 <th>EMP NO</th>
                 <th>NAME</th>

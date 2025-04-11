@@ -27,6 +27,13 @@
       "name": "himanshi",
       "designation": "developer",
       "salary": "20000"
+    },
+    {
+      "id": "25d5",
+      "empno": "1001",
+      "name": "shanu",
+      "designation": "developer",
+      "salary": "20000"
     }
   ]
 }
