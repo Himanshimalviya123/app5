@@ -615,25 +615,43 @@
 // }
 // export default App;
 // **********************************( json )**********************************************************
-import { BrowserRouter,Routes,Route } from "react-router-dom";
-import Layout from "./attribute class/layout";
-import Home from "./attribute class/home";
-import Insert from "./attribute class/insert";
-import Display from "./attribute class/display";
+// import { BrowserRouter,Routes,Route } from "react-router-dom";
+// import Layout from "./attribute class/layout";
+// import Home from "./attribute class/home";
+// import Insert from "./attribute class/insert";
+// import Display from "./attribute class/display";
+// const App=()=>{
+//   return(
+//       <>
+//      <BrowserRouter>
+//      <Routes>
+//       <Route path="/" element={<Layout/>}>
+//       <Route index element={<Home/>}/>
+//       <Route path="home" element={<Home/>}/>
+//       <Route path="insert" element={<Insert/>}/>
+//       <Route path="display"element={<Display/>}/>
+//       </Route>
+//      </Routes>
+//      </BrowserRouter>
+//       </>
+//   )
+// }
+// export default App;
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+import { BrowserRouter,Router,Route } from "react-router-dom";
+import Home from "./pages/home";
+import Layout from "./pages/layout";
 const App=()=>{
   return(
-      <>
-     <BrowserRouter>
-     <Routes>
+    <>
+    <h1>welcome</h1>
+    <BrowserRouter>
+    <Router>
       <Route path="/" element={<Layout/>}>
-      <Route index element={<Home/>}/>
-      <Route path="home" element={<Home/>}/>
-      <Route path="insert" element={<Insert/>}/>
-      <Route path="display"element={<Display/>}/>
-      </Route>
-     </Routes>
-     </BrowserRouter>
-      </>
+        </Route>
+    </Router>
+    </BrowserRouter>
+    </>
   )
 }
 export default App;
