@@ -632,13 +632,17 @@ const App=()=>{
       <Route index element={<Home/>}/>
       <Route path="home" element={<Home/>}/>
       <Route path="insert" element={<Insert/>}/>
-      <Route path="display"element={<Update/>}/>
+      <Route path="display"element={<Display/>}/>
       <Route path="search"element={<Search/>}/>
-      <Route path="update"element={<Contact/>}/>
+      <Route path="update"element={<Update/>}/>
+      <Route path="contact"element={<Contact/>}/>
+      
       
       </Route>
      </Routes>
      </BrowserRouter>
+     {/* ---------------------------------------footer---------------------------------- */}
+     
       </>
   )
 }
